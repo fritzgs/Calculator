@@ -16,7 +16,7 @@ This program converts infix string to postfix and uses the postfix notation as t
 
 ### Functioning
 
-Can calculate one-digit expressions (5 + 4)
+Can calculate one-digit expressions (e.g. 5 + 4)
 
 Can covert to Postfix </br>
 
