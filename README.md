@@ -1,9 +1,6 @@
 # Calculator
 Data Structures Lab 1 
 
-<<<<<<< HEAD
-This assignment is incomplete.
-=======
 ## Specs
 
 "The task The goal of this assignment is to build an electronic calculator. </br>
@@ -12,7 +9,24 @@ The calculator should allow mathematical expressions to be entered and displayed
 
 You will be given three classes that implements a simple calculator, and your job is to expand it to cater for more complex calculations."
 
+This program converts infix string to postfix and uses the postfix notation as the expression to calculate. <br>
+(This requirement was added on to the specs on later date).
+
 ## Notes
+
+### Functioning
+
+Can calculate one-digit expressions (5 + 4)
+
+Can covert to Postfix </br>
+
+Can calculate +, -, /, *, ^
+
+### Bugs
+Not fully tested. </br>
+</br>
+
+It does not cater for with two-digit (or more) numbers.
+
+</br>
 This assignment is incomplete. </br>
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
-A few bugs exists.
