@@ -22,11 +22,7 @@ public class CalcEngine
 	{
 		displayValue = "";
 	}
-	
-<<<<<<< HEAD
-	
-=======
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
+
 	public void buttonPressed(String button)
 	{
 		displayValue += button;
@@ -35,8 +31,7 @@ public class CalcEngine
 	
 	/**
 	 * 
-<<<<<<< HEAD
-=======
+
 	 * @param infix
 	 * @return postfix
 	 * 
@@ -128,7 +123,6 @@ public class CalcEngine
 	
 	/**
 	 * 
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 	 * @param resultedPostfix
 	 * @return valueStack.peek(); 
 	 * 
@@ -178,19 +172,16 @@ public class CalcEngine
 			}
 			
 			//if the operator stack isn't empty and there are 2 numbers in the value stack do this
-<<<<<<< HEAD
 			while(!operatorStack.isEmpty() && valueStack.size() >= 2)
 			{
 				topOperator = operatorStack.pop(); //save the operator to top operator
 				operandOne = valueStack.pop(); //save the peek of value stack to operandTwo
 				operandTwo = valueStack.pop(); // save the new peek of the value stack to operandOne
-=======
 			while(!operatorStack.isEmpty() && valueStack.size() == 2)
 			{
 				topOperator = operatorStack.pop(); //save the operator to top operator
 				operandTwo = valueStack.pop(); //save the peek of value stack to operandTwo
 				operandOne = valueStack.pop(); // save the new peek of the value stack to operandOne
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 			
 				result = result(topOperator, operandTwo, operandOne); //do this method which topOperator, operandTwo and operandOne as the parameters
 				//convert result to string to add onto stack.
@@ -219,11 +210,8 @@ public class CalcEngine
 		switch(opor)
 		{
 			case '+':
-<<<<<<< HEAD
 				result = Double.parseDouble(opand2) + Double.parseDouble(opand1);
-=======
 				result = Double.parseDouble(opand1) + Double.parseDouble(opand2);
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 				break;
 				
 			case '-':
@@ -239,21 +227,16 @@ public class CalcEngine
 				break;
 				
 			case '^':
-<<<<<<< HEAD
 				result = Math.pow(Double.parseDouble(opand2), Double.parseDouble(opand1));
-=======
+
 				result = Math.pow(Double.parseDouble(opand1), Double.parseDouble(opand2));
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 				break;
 		}
 		//return the result of that operator.
 		return result;
 	}
 	
-<<<<<<< HEAD
-		
-=======
-	
+
 	/**
 	 * 
 	 * @param operator
@@ -301,7 +284,6 @@ public class CalcEngine
 		else
 			return false;
 	}
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 	
 	//reset the displayValue to empty string
 	public void clear()
@@ -310,15 +292,14 @@ public class CalcEngine
 	}
 	
 	public String getTitle()
-    {
-        return("My Calculator");
-    }
+    	{
+        	return("My Calculator");
+	}
 
 	public String getDisplayValue()
 	{
 		return displayValue;
 	}	
-<<<<<<< HEAD
 	
 	/**
 	 * 
@@ -396,25 +377,22 @@ public class CalcEngine
 	 */
 	
 	private static int prec(char ch)
-    {
-        switch (ch)
-        {
-        case '+':
-        case '-':
-            return 1;
-      
-        case '*':
-        case '/':
-            return 2;
-      
-        case '^':
-            return 3;
-        }
-        return -1;
-    }
-	
-=======
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
+    	{
+		switch (ch)
+		{
+			case '+':
+			case '-':
+			    return 1;
+
+			case '*':
+			case '/':
+			    return 2;
+
+			case '^':
+			    return 3;
+		}
+		return -1;
+   	 }
 }
 
 
