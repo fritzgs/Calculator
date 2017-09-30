@@ -44,7 +44,7 @@ public class UserInterface implements ActionListener
 		
 		//matrix of 5 columns, 4 rows
 		JPanel buttonPanel = new JPanel(new GridLayout(5, 4));
-<<<<<<< HEAD
+		
 		addButton(buttonPanel, "PF");
 		addButton(buttonPanel, "(");
 		addButton(buttonPanel, ")");
@@ -65,7 +65,7 @@ public class UserInterface implements ActionListener
 		addButton(buttonPanel, "^");
 		addButton(buttonPanel, "/");
 		addButton(buttonPanel, "=");
-=======
+		
 		addButton(buttonPanel, "C");
 		addButton(buttonPanel, "(");
 		addButton(buttonPanel, ")");
@@ -86,7 +86,7 @@ public class UserInterface implements ActionListener
 		addButton(buttonPanel, "0");
 		addButton(buttonPanel, "^");
 		addButton(buttonPanel, "/");
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
+
 		contentPane.add(buttonPanel, BorderLayout.SOUTH);
 		frame.pack();
 	}
@@ -124,32 +124,29 @@ public class UserInterface implements ActionListener
 				displayString();
 				break;
 				
-<<<<<<< HEAD
+
 			case "AC":
-=======
+
 			case "C":
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
+
 				calc.clear();
 				displayString();
 				break;
 				
 			//displays the postfix equivalent of the infix
 			case "PF":
-<<<<<<< HEAD
+
 				calc.toPostFix(calc.getDisplayValue());
-=======
+
 				calc.convertInfix(calc.getDisplayValue());
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 				displayString();
 				calc.clear();
 				break;
 				
 			case "=":
-<<<<<<< HEAD
 				calc.evaluatePostfix(calc.toPostFix(calc.getDisplayValue()));
-=======
+
 				calc.evaluatePostfix(calc.convertInfix(calc.getDisplayValue()));
->>>>>>> d0eb13363e97f3f0b19e45de1aef8333fd1e1d3d
 				displayString();
 				calc.clear();
 				break;
