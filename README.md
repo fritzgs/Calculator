@@ -1,6 +1,12 @@
 # Calculator
 Data Structures Lab 1 
 
+## Author
+Fritz Gerald Santos
+
+[GitHub](https://github.com/fritzgs) </br>
+[LinkedIn](https://linkedin.com/in/fritz-gerald-santos/)
+
 ## Specs
 
 "The task The goal of this assignment is to build an electronic calculator. </br>
